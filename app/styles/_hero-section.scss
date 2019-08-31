@@ -1,0 +1,48 @@
+.hero{
+  position: relative;
+  background-image: url("https://picsum.photos/id/279/1800/900");
+  background-size: cover;
+  height: 100vh;
+  max-height: 900px;
+  background-color: $gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .hero-content{
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color:$white;
+    font-weight: 300;
+    .hero__subtitle{
+      text-transform: uppercase;
+      letter-spacing: 3.4px;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      font-family: 'Raleway', sans-serif;
+      line-height: 1.5rem;
+      display: inline-block;
+      margin-bottom: 14px;
+    }
+    .hero__title{
+      font-size: 2.5rem;
+      line-height: 3.5rem;
+      max-width: 550px;
+      margin-bottom: 28px;
+    }
+    .hero__subtitle-lowercase{
+      font-size: 1rem;
+      line-height: 1.25rem;
+    }
+  }
+  .arrow{
+    width:30px;
+    height: auto;
+    position: absolute;
+    bottom: 60px;
+    left: calc(50% - 30px);
+  }
+}

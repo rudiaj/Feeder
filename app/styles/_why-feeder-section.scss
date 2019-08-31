@@ -1,0 +1,54 @@
+.why-feeder{
+  min-height: 685px;
+  height: 100%;
+  background-color: $dirty-white;
+  display: flex;
+  position: relative;
+  .container{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .why-feeder-first-column{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background-size: cover;
+    background-image: url("https://picsum.photos/685/685/");
+    @media(max-width:800px) {
+      display: none;
+    }
+  }
+  .why-feeder-second-column{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex:0.5;
+    @media(max-width:800px) {
+      flex:1;
+      .why-feeder-second-column__inner{
+        .h1, p{
+          text-align: center !important;
+        }
+        padding: 100px 0 !important;
+      }
+
+    }
+    .why-feeder-second-column__inner{
+      padding: 20px 0 20px 78px;
+      .h1{
+        text-align: left;
+        margin-bottom:40px;
+      }
+      p{
+        text-align: left;
+        margin-bottom: 15px;
+        &:last-of-type{
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
